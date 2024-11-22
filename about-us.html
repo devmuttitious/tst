@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/icons/logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <!-- ashley scss -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- page name -->
+    <title>TST. About us</title>
+
+    <style>
+
+         /* Default state for dropdown (hidden) */
+.mil-has-children ul {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Active state for dropdown (visible) */
+.mil-has-children ul.show {
+    max-height: 300px; /* Adjust as needed to fit the content */
+    opacity: 1;
+}
+
+/* Rotate arrow smoothly */
+.rotate-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+        
+        /* Vision Section Styling */
+.vision-section {
+    margin-top: 650px;
+    padding: 60px 20px;
+    background-color: #17191B;
+    color: #fff;
+    text-align: center;
+}
+
+.vision-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.vision-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vision-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    margin: 0 -150px;
+    justify-items: center; /* Align cards in the center */
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.vision-card {
+   
+    border: 1px solid #2e3135;
+    border-radius: 1px;
+    padding: 20px;
+    width: 280px;
+    gap: 0;
+    max-width: 100%;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.vision-card:hover {
+    background-color: #111314;
+    color: #fff;
+    cursor: default;
+    border: 1px solid #fff;
+    transition: transform 0.3s;
+}
+
+.vision-icon {
+    font-size: 2.5rem;
+    color: #B79435;
+    margin: 50px 0 50px 0;
+}
+
+.vision-card h3 {
+    font-size: 1.5rem;
+    color: #B79435;
+    margin-bottom: 20px;
+}
+
+.vision-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.container h2{
+    color: #fff;
+    font-weight: 400;
+}
+
+.container p{
+    margin-top: 40px;
+    
+}
+
+@media (max-width: 768px) {
+    .vision-cards {
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+        margin: 0;
+        
+    }
+
+    .vision-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .vision-title {
+        font-size: 1.8rem; /* Slightly smaller title on mobile */
+    }
+
+    .vision-description {
+        font-size: 1rem; /* Adjust text size for mobile */
+    }
+
+    .vision-icon {
+        font-size: 2rem; /* Reduce icon size on mobile */
+    }
+}
+
+/* Styling for the Unique Environment Section */
+.unique-environment-section {
+    background-color: #f9f9f2;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unique-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.unique-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.unique-icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    justify-items: center;
+}
+
+.unique-icon-box {
+    text-align: center;
+    max-width: 250px;
+}
+
+.unique-icon {
+    font-size: 3rem;
+    color: #B79435;
+    margin-bottom: 1.5rem;
+}
+
+.unique-icon-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+    .unique-icon-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .unique-icon-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.location-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f1;
+}
+
+.location-section h4 {
+    color: #B79435;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.location-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location-icon {
+    font-size: 3rem;
+    color: #B79435;
+    margin-bottom: 15px;
+}
+
+.location-box h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.location-link {
+    font-size: 0.9rem;
+    color: #B79435;
+    text-decoration: none;
+    border-bottom: 1px solid #B79435;
+}
+
+.location-link:hover {
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .locations-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .location-icon {
+        font-size: 2.5rem;
+    }
+
+    .location-link {
+        font-size: 0.8rem;
+    }
+}
+
+.location-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f1;
+}
+
+.location-section h4 {
+    color: #b2924d;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.location-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location-icon {
+    font-size: 3rem;
+    color: #b2924d;
+    margin-bottom: 15px;
+}
+
+.location-box h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.location-link {
+    font-size: 0.9rem;
+    color: #b2924d;
+    text-decoration: none;
+    border-bottom: 1px solid #b2924d;
+}
+
+.location-link:hover {
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .locations-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .location-icon {
+        font-size: 2.5rem;
+    }
+
+    .location-link {
+        font-size: 0.8rem;
+    }
+}
+
+.faq-section {
+
+        max-width: 1200px;
+        width: 100%;
+        height: 500px;
+        margin: 50px 80px;
+    }
+
+    .faq-section h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .faq-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        gap: 20px;
+    }
+
+    .faq-item {
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .faq-question {
+        padding: 15px;
+        cursor: pointer;
+        font-weight: 400;
+        position: relative;
+        transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+        background-color: #f1f1f1;
+    }
+
+    .faq-question::after {
+        content: '▼';
+        position: absolute;
+        right: 20px;
+        font-size: 14px;
+        transition: transform 0.3s;
+    }
+
+    .faq-question.active::after {
+        transform: rotate(180deg);
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 0 15px;
+        transition: max-height 0.5s ease;
+    }
+
+    .faq-answer p {
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .faq-item.open .faq-answer {
+        max-height: 100px; /* Adjust this value if answers are longer */
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .faq-section {
+            height: 700px;
+        }
+        .faq-section h1 {
+            text-align: center;
+            margin-left: -200px;
+        }
+        .faq-container {
+            grid-template-columns: 1fr; /* Single column on smaller screens */
+            width: 80%;
+            margin: 0 -40px;
+        }
+        
+        .faq-section h1 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .faq-question {
+            font-size: 16px;
+            padding: 10px;
+        }
+        .faq-answer p {
+            font-size: 14px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="mil-wrapper" id="top">
+
+        <!-- cursor -->
+        <div class="mil-ball">
+            <span class="mil-icon-1">
+                <svg viewBox="0 0 128 128">
+                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
+                </svg>
+            </span>
+            <div class="mil-more-text">More</div>
+            <div class="mil-choose-text">Сhoose</div>
+        </div>
+        <!-- cursor end -->
+
+        <!-- preloader -->
+        <div class="mil-preloader">
+            <div class="mil-preloader-animation">
+                <div class="mil-pos-abs mil-animation-1">
+                    <p class="mil-h3 mil-muted mil-thin">About us</p>
+                    <!-- <p class="mil-h3 mil-muted">Creative</p>
+                    <p class="mil-h3 mil-muted mil-thin">Excellence</p> -->
+                </div>
+                <div class="mil-pos-abs mil-animation-2">
+                    <div class="mil-reveal-frame">
+                        <p class="mil-reveal-box"></p>
+                        <p class="mil-h3 mil-muted mil-thin">tst.com.sa</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- preloader end
+
+        <!-- scrollbar progress -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+        <!-- scrollbar progress end -->
+
+       <!-- menu -->
+       <div class="mil-menu-frame">
+        <!-- frame clone -->
+        <div class="mil-frame-top">
+            <a href="index" class="mil-logo">
+                <img src="img/icons/logo.png" alt="Logo" class="mil-logo-img">
+            </a>
+            <div class="mil-menu-btn">
+                <span></span>
+            </div>
+        </div>
+        <!-- frame clone end -->
+        <div class="container">
+            <div class="mil-menu-content">
+                <div class="row">
+                    <div class="col-xl-5">
+
+                        <nav class="mil-main-menu" id="swupMenu">
+                            <ul>
+                                <li class="mil-has-children ">
+                                    <a href="index">Home</a>
+                    
+                                </li>
+                                <li class="mil-has-children">
+                                    <a href="#.">Our Business<i class="ri-arrow-down-s-line"></i></a>
+                                    <ul>
+                                        <li class="mil-has-children">
+                                            <a href="realestate">Realestate</a>
+                                            
+                                        </li>
+                                        <li><a href="trade">Trading</a></li>
+                                        <li><a href="contracting">Contracting</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mil-has-children">
+                                    <a href="#.">Portfolio<i class="ri-arrow-down-s-line"></i></a>
+                                    <ul>
+                                        <li><a href="./portfolio">Projects</a></li>
+                                    </ul>
+                                </li>
+                               
+
+                                <li class="mil-has-children">
+                                    <a href="#.">Newsletter<i class="ri-arrow-down-s-line"></i></a>
+                                    <ul>
+                                        <li><a href="media-gallery">Blogs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mil-has-children ">
+                                    <a href="contact">Contact us</a>
+                    
+                                </li>
+                                <li class="mil-has-children ">
+                                    <a href="careers">Careers</a>
+                    
+                                </li>
+                                <li class="mil-has-children mil-active">
+                                    <a href="#.">Other pages<i class="ri-arrow-down-s-line"></i></a>
+                                    <ul>
+                                        <li><a href="cookie-policy">Cookies and Policy</a></li>
+                                        <li><a href="terms-of-use">Terms of Use</a></li>
+                                        <li><a href="crypto-disclaimer">Crypto Disclaimer</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <script>
+                           document.addEventListener("DOMContentLoaded", function () {
+                                const dropdownLinks = document.querySelectorAll(".mil-has-children > a");
+
+                                dropdownLinks.forEach(link => {
+                                    link.addEventListener("click", function (e) {
+                                        e.preventDefault();
+
+                                        const dropdown = link.nextElementSibling;
+                                        const icon = link.querySelector("i");
+
+                                        // Toggle the dropdown visibility
+                                        if (dropdown.classList.contains("show")) {
+                                            // Collapse the dropdown
+                                            dropdown.style.maxHeight = "0";
+                                            dropdown.classList.remove("show");
+                                            icon.classList.remove("rotate-icon");
+                                        } else {
+                                            // Expand the dropdown
+                                            dropdown.classList.add("show");
+                                            dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+                                            icon.classList.add("rotate-icon");
+
+                                            // Close other dropdowns
+                                            dropdownLinks.forEach(otherLink => {
+                                                if (otherLink !== link) {
+                                                    const otherDropdown = otherLink.nextElementSibling;
+                                                    const otherIcon = otherLink.querySelector("i");
+
+                                                    otherDropdown.style.maxHeight = "0";
+                                                    otherDropdown.classList.remove("show");
+                                                    otherIcon.classList.remove("rotate-icon");
+                                                }
+                                            });
+                                        }
+                                    });
+                                });
+                            });
+
+                        </script>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+
+        <!-- curtain -->
+        <div class="mil-curtain"></div>
+        <!-- curtain end -->
+
+        <!-- frame -->
+        <div class="mil-frame">
+            <!-- frame clone -->
+            <div class="mil-frame-top">
+                <a href="index" class="mil-logo">
+                    <img src="img/icons/logo-1.png" alt="Logo" class="mil-logo-img">
+                </a>
+                <div class="mil-menu-btn">
+                    <span></span>
+                </div>
+            </div>
+            <div class="mil-frame-bottom">
+                <div class="mil-current-page"></div>
+                <div class="mil-back-to-top">
+                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
+                        <span>Back to top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- frame end -->
+
+        <!-- content -->
+        <div class="mil-content">
+            <div id="swupMain" class="mil-main-transition">
+
+                <!-- banner -->
+                <div class="mil-inner-banner">
+
+                    <div class="mil-animation-frame">
+                        <div class="video-wrapper" >
+                            <!-- Background Video -->
+                            <video class="banner-two_video-bg" autoplay muted loop playsinline style="filter: brightness(0.7) contrast(1.2);">
+                                <source src="/videos/about.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>    
+
+                            <!-- Title -->
+                            <h1 class="video-title" id="videoTitle"></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="vision-section" class="vision-section">
+                    <div class="container">
+                        <h2 class="vision-title">OUR VISION</h2>
+                        <p class="vision-description">
+                            TST is committed to being a leader in innovative solutions, transforming industries with sustainable practices, and creating exceptional value for our customers and communities.
+                        </p>
+                        <div class="vision-cards">
+                            <!-- Card 1: Automotive -->
+                            <div class="vision-card">
+                                <div class="vision-icon">
+                                    <i class="fas fa-car"></i> <!-- Icon updated to car -->
+                                </div>
+                                <h3>Automotive</h3>
+                                <p>
+                                    TST envisions a future where cutting-edge automotive technology and sustainable practices redefine the car industry, creating safer, greener, and more efficient vehicles for a better tomorrow.
+                                </p>
+                            </div>
+                    
+                            <!-- Card 2: Real Estate -->
+                            <div class="vision-card">
+                                <div class="vision-icon">
+                                    <i class="fas fa-building"></i> <!-- Icon updated to building -->
+                                </div>
+                                <h3>Real Estate</h3>
+                                <p>
+                                    TST is shaping the future of real estate by developing innovative, sustainable properties that not only meet the needs of today but also create thriving communities for future generations.
+                                </p>
+                            </div>
+                    
+                            <!-- Card 3: Construction -->
+                            <div class="vision-card">
+                                <div class="vision-icon">
+                                    <i class="fas fa-hammer"></i> <!-- Icon updated to hammer -->
+                                </div>
+                                <h3>Construction</h3>
+                                <p>
+                                    TST is revolutionizing the construction industry by building robust, sustainable structures that are designed to stand the test of time, ensuring safety and quality in every project we undertake.
+                                </p>
+                            </div>
+                    
+                            <!-- Card 4: Mechanical -->
+                            <div class="vision-card">
+                                <div class="vision-icon">
+                                    <i class="fas fa-cogs"></i> <!-- Icon updated to cogs -->
+                                </div>
+                                <h3>Mechanical</h3>
+                                <p>
+                                    TST leads the way in mechanical innovation, harnessing advanced engineering and technology to create cutting-edge solutions that improve efficiency, performance, and sustainability in every aspect of mechanical work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                            <!-- Unique Environment Section Start -->
+                <section class="unique-environment-section">
+                    <div class="unique-container">
+                        <h2 class="unique-heading">A UNIQUE APPROACH TO ENGINEERING</h2>
+                        <div class="unique-icon-container">
+                            <div class="unique-icon-box">
+                                <i class="fas fa-cogs unique-icon"></i>
+                                <p class="unique-icon-text">State-of-the-art engineering solutions</p>
+                            </div>
+                            <div class="unique-icon-box">
+                                <i class="fas fa-building unique-icon"></i>
+                                <p class="unique-icon-text">Innovative construction and design practices</p>
+                            </div>
+                            <div class="unique-icon-box">
+                                <i class="fas fa-users-cog unique-icon"></i>
+                                <p class="unique-icon-text">Skilled workforce and expert engineers</p>
+                            </div>
+                            <div class="unique-icon-box">
+                                <i class="fas fa-clipboard-list unique-icon"></i>
+                                <p class="unique-icon-text">Strict adherence to safety and quality standards</p>
+                            </div>
+                            <div class="unique-icon-box">
+                                <i class="fas fa-leaf unique-icon"></i>
+                                <p class="unique-icon-text">Sustainable development and eco-friendly practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Unique Environment Section End -->
+                 
+                <section class="location-section">
+                    <h4>Our Locations</h4>
+                    <h2>TST Offices</h2>
+                    <div class="locations-container">
+                        <div class="location-box">
+                            <i class="fas fa-building location-icon"></i>
+                            <h3>TST HQ</h3>
+                            <a href="#" class="location-link">Location</a>
+                        </div>
+                        <div class="location-box">
+                            <i class="fas fa-city location-icon"></i>
+                            <h3>TST Riyadh Office</h3>
+                            <a href="#" class="location-link">Location</a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="faq-section">
+                    <h1>FAQ</h1>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">What is TST?</div>
+                            <div class="faq-answer">
+                                <p>TST is a leading civil engineering and construction company based in Saudi Arabia, specializing in infrastructure development, building construction, and project management services.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">Which services does TST offer?</div>
+                            <div class="faq-answer">
+                                <p>TST offers a wide range of services, including civil engineering, architectural design, infrastructure projects, project management, and consulting services tailored to meet client needs.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">How can I start a project with TST?</div>
+                            <div class="faq-answer">
+                                <p>To start a project, contact our  via email at <a href="mailto:contact@tst.com.sa">contact@tst.com.sa</a> or visit our office for a detailed consultation and project proposal.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">What types of projects does TST handle?</div>
+                            <div class="faq-answer">
+                                <p>TST handles a diverse range of projects, including residential buildings, commercial spaces, industrial facilities, and public infrastructure projects.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">Does TST provide project management services?</div>
+                            <div class="faq-answer">
+                                <p>Yes, TST offers comprehensive project management services, including planning, scheduling, resource allocation, and quality control to ensure successful project completion.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">How does TST ensure the quality of its projects?</div>
+                            <div class="faq-answer">
+                                <p>TST follows stringent quality assurance protocols and employs the latest construction technologies to maintain the highest standards of quality and safety in all projects.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">Can I invest in a TST project?</div>
+                            <div class="faq-answer">
+                                <p>Yes, TST welcomes investors for various projects. Please contact our business development  for more details on investment opportunities.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">What is TST's approach to sustainability?</div>
+                            <div class="faq-answer">
+                                <p>TST is committed to sustainable building practices, incorporating eco-friendly materials and innovative designs to reduce environmental impact and promote energy efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    // JavaScript to handle the dropdown functionality with smooth transition
+                    document.querySelectorAll('.faq-question').forEach(question => {
+                        question.addEventListener('click', () => {
+                            const faqItem = question.parentElement;
+                            faqItem.classList.toggle('open');
+                            question.classList.toggle('active');
+                        });
+                    });
+                </script>
+                
+                 <!-- footer -->
+                 <footer class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-60">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 col-lg-4 mil-mb-60">
+
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30">
+                                        <img src="img/icons/logo.png" alt="Logo" class="mil-logo-img">
+                                    </div>
+
+                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe to our newsletter:</p>
+
+                                    <form id="subscribeForm" class="mil-subscribe-form mil-up">
+                                        <input type="email" id="emailInput" placeholder="Enter your email" required>
+                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+                                    </form>
+                                    
+                                    <script>
+                                        document.getElementById('subscribeForm').addEventListener('submit', async (e) => {
+                                            e.preventDefault();
+                                    
+                                            const email = document.getElementById('emailInput').value;
+                                    
+                                            try {
+                                                // Sending POST request to the backend API
+                                                const response = await fetch('http://localhost:3000/api/subscribe', {
+                                                    method: 'POST',
+                                                    headers: {
+                                                        'Content-Type': 'application/json',
+                                                    },
+                                                    body: JSON.stringify({ email }),
+                                                });
+                                    
+                                                const data = await response.json();
+                                    
+                                                if (response.ok) {
+                                                    // Dark theme success notification with mail icon
+                                                    Swal.fire({
+                                                        icon: 'success',
+                                                        title: 'Subscribed Successfully!',
+                                                        text: 'You have been added to our newsletter.',
+                                                        background: '#1a1a1a', // Dark background color
+                                                        color: '#e0e0e0',      // Light text color
+                                                        iconColor: '#4caf50', // Success icon color
+                                                        timer: 5000,
+                                                        showConfirmButton: false,
+                                                        customClass: {
+                                                            popup: 'swal-dark-popup',
+                                                            title: 'swal-dark-title',
+                                                            htmlContainer: 'swal-dark-text',
+                                                        },
+                                                    });
+                                                    document.getElementById('subscribeForm').reset();
+                                                } else {
+                                                    // Dark theme error notification
+                                                    Swal.fire({
+                                                        icon: 'error',
+                                                        title: 'Subscription Failed',
+                                                        text: data.message || 'Failed to subscribe. Please try again.',
+                                                        background: '#1a1a1a',
+                                                        color: '#e0e0e0',
+                                                        iconColor: '#f44336', // Error icon color
+                                                        timer: 5000,
+                                                        showConfirmButton: false,
+                                                    });
+                                                }
+                                            } catch (error) {
+                                                console.error('Error:', error);
+                                                // Dark theme error notification for unexpected issues
+                                                Swal.fire({
+                                                    icon: 'error',
+                                                    title: 'Error',
+                                                    text: 'An error occurred. Please try again later.',
+                                                    background: '#1a1a1a',
+                                                    color: '#e0e0e0',
+                                                    iconColor: '#f44336',
+                                                    timer: 5000,
+                                                    showConfirmButton: false,
+                                                });
+                                            }
+                                        });
+                                    </script>
+                                          
+
+                                </div>
+                                <div class="col-md-7 col-lg-6">
+                                    <div class="row justify-content-end">
+                                      
+                                        <div class="col-md-6 col-lg-5">
+
+                                            <ul class="mil-menu-list mil-up mil-mb-60">
+                                                <li><a href="privacy-policy" class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="terms-of-use" class="mil-light-soft">Terms of Use</a></li>
+                                                <li><a href="cookie-policy" class="mil-light-soft">Cookie Policy</a></li>
+                                                <li><a href="crypto-disclaimer" class="mil-light-soft">Crypto Disclaimer</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-md-6 col-lg-5">
+
+                                            <ul class="mil-menu-list mil-up mil-mb-60">
+                                                <li><a href="about-us" class="mil-light-soft">About Us</a></li>
+                                                <li><a href="careers" class="mil-light-soft">Careers</a></li>
+                                                <li><a href="media-gallery" class="mil-light-soft">Media Gallery</a></li>
+                                                <li><a href="./" class="mil-light-soft"></a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between flex-sm-row-reverse">
+                                <div class="col-md-7 col-lg-6">
+
+                                    <div class="row justify-content-between">
+
+                                        <div class="col-md-6 col-lg-5 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-up mil-mb-30">Saudi Arabia</h6>
+
+                                            <p class="mil-light-soft mil-up" style="position: absolute;">Al-Jesser District, Commercial Street
+                                                Khobar, Saudi Arabia <br> <span class="mil-no-wrap">+51 174 705 812</span> <br>info@tst.com.sa
+                                            </p>
+
+                                        </div>
+                                 
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 col-lg-6 mil-mb-60">
+
+                                    <div class="mil-vert-between">
+                                        <!-- Social Media Links -->
+                                        <div class="mil-mb-30">
+                                            <ul class="mil-social-icons mil-up">
+                                                <li><a href="https://web.facebook.com/tst.601?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank"
+                                                        class="social-icon"> <i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="https://x.com/search?q=tst_601&t=hSTqqeMPt4IvJZApqT93RA&s=09" target="_blank"
+                                                        class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="https://www.instagram.com/tst.601/?igshid=YmMyMTA2M2Y" target="_blank"
+                                                        class="social-icon"> <i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="https://api.whatsapp.com/send/?phone=966598301301&text&type=phone_number&app_absent=0" target="_blank"
+                                                        class="social-icon"> <i class="fab fa-whatsapp"></i></a></li>
+                                                <li><a href="https://www.snapchat.com/add/tst.601" target="_blank"
+                                                        class="social-icon"> <i class="fab fa-snapchat"></i></a></li>
+                                               
+                                        </div>
+                                        <p class="mil-light-soft mil-up">© 2024 - TST. All Rights Reserved.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer end -->
+
+                <!-- hidden elements -->
+                <div class="mil-hidden-elements">
+                    <div class="mil-dodecahedron">
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
+                    </svg>
+
+                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
+                    </svg>
+                </div>
+                <!-- hidden elements end -->
+
+            </div>
+        </div>
+        <!-- content -->
+    </div>
+    <!-- wrapper end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- jQuery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- gsap js -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <!-- scroll trigger js -->
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <!-- ashley js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
